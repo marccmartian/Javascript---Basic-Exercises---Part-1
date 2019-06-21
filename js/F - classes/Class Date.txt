@@ -1,0 +1,38 @@
+JavaScript dispone de varias clases predefinidas para acceder a muchas de las funciones normales de cualquier lenguaje, como puede ser el manejo de vectores o el de fechas.
+
+Esta clase nos permitirá manejar fechas y horas. Se invoca así:
+
+fecha = new Date();//creación de un objeto de la clase Date
+fecha = new Date(año, mes, dia);
+fecha = new Date(año, mes, dia, hora, minuto, segundo);
+Si no utilizamos parámetros, el objeto fecha contendrá la fecha y hora actual, recuperadas del reloj de nuestra computadora. En caso contrario hay que tener en cuenta que los meses comienzan por cero. Así, por ejemplo:
+
+navidad06 = new Date(2018, 11, 25)
+El objeto Date dispone, entre otros, de los siguientes métodos:
+
+  getYear()
+  setYear(año)
+    Obtiene y coloca, respectivamente, el año de la fecha. 
+    Éste se devuelve como número de 4 dígitos excepto en el 
+    caso en que esté entre 1900 y 1999, en cuyo caso 
+    devolverá las dos últimas cifras.
+  getFullYear()
+  setFullYear(año) 
+    Realizan la misma función que los anteriores, pero sin 
+    tanta complicación, ya que siempre devuelven números  
+    con todos sus dígitos. 
+  getMonth()          (index 0)
+  setMonth(mes)
+  getDate()
+  setDate(dia)
+  getHours()
+  setHours(horas)
+  getMinutes()
+  setMinutes(minutos)
+  getSeconds()
+  setSeconds(segundos) 
+    Obtienen y colocan, respectivamente, el mes, día, hora, 
+    minuto y segundo de la fecha.
+  getDay() 
+    Devuelve el día de la semana de la fecha en forma de 
+    número que va del 0 (domingo) al 6 (sábado)

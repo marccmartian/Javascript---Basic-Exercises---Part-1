@@ -1,0 +1,58 @@
+Un string consiste en uno o más caracteres encerrados entre comillas simples o dobles.
+
+Concatenación de cadenas (+)
+JavaScript permite concatenar cadenas utilizando el operador +.
+
+El siguiente fragmento de código concatena tres cadenas para producir su salida:
+
+var final='La entrada tiene ' + contador + ' caracteres.';
+Dos de las cadenas concatenadas son cadenas literales. La del medio es un entero que automáticamente se convierte a cadena y luego se concatena con las otras.
+
+PROPIEDAD length
+Retorna la cantidad de caracteres de un objeto String.
+
+    var nom='Juan';
+    document.write(nom.length); //Resultado 4
+
+METODOS
+*   charAt(posicion)
+    Retorna el carácter del índice especificado. Comienzan a numerarse de la posición cero.
+
+    var nombre='juan';
+    var caracterPrimero=nombre.charAt(0);
+
+*   substring (posinicial, posfinal)
+    Retorna un String extraída de otro, desde el carácter 'posinicial' hasta el 'posfinal'-1:
+
+	cadena3=cadena1.substring(2,5);
+    En este ejemplo, "cadena3" contendrá los caracteres 2, 3, 4 sin incluir el 5 de cadena1 (Cuidado que comienza en cero)
+
+*   indexOf (subCadena) 
+    Devuelve la posición de la subcadena dentro de la cadena, ó -1 en caso de no estar.
+    Tener en cuenta que puede retornar 0 si la subcadena coincide desde el primer carácter.
+
+    var nombre='Rodriguez Pablo';
+    var pos=nombre.indexOf('Pablo');
+    if (pos != -1)
+        document.write ('Está el nombre Pablo en la variable nombre');
+
+*   toUpperCase()
+    Convierte todos los caracteres del String que invoca el método a mayúsculas:
+
+    cadena1=cadena1.toUpperCase();
+    Luego de esto, cadena1 tiene todos los caracteres convertidos a mayúsculas.
+
+*   toLowerCase()
+    Convierte todos los caracteres del String que invoca el método a minúsculas:
+
+    cadena1=cadena1.toLowerCase();
+    Luego de esto, cadena1 tiene todos los caracteres convertidos a minúsculas.
+
+*   replace(a, b)
+    a = cadena o valor a remplazar - se pueden pasar expresiones regulares   
+    b = nueva cadena o nuevo valor
+    
+    var h = 'Hola-Mundo-Mundial'; 
+    h.replace(/-/g,'')              //HolaMundoMundial
+
+    la parte / significa que es una exprecion regular que busca espacios, y la /g significa que es global, es decir busca todos los espacios en la variable.
