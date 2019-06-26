@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body onload="verificarCookies()">
+    <script>
+        function verificarCookies(){
+            if(navigator.cookieEnabled){
+                alert('Acceso a cookies activas');
+            }else{
+                alert('No se encuantran activadas las cookies');
+            }
+        }
+    </script>
+</body>
+</html>

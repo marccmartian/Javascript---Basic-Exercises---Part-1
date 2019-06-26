@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="redireccionar()">Ir a pagina aliatoria</button>
+</body>
+
+<script>
+    function redireccionar(){
+        var num = parseInt(Math.random()*3);
+        if (num == 0){location = 'http://www.outlook.com'}
+        if (num == 1){location = 'http://www.gmail.com'}
+        if (num == 2){location = 'http://www.yahoo.com'}
+    }
+</script>
+</html>

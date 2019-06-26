@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>Este programa permite analizar la llamada a distintas responsabilidades del objeto Window</p>
+    <br>
+    <input type="button" value="Open" onclick="abrir()">
+    <br><br>
+    <input type="button" value="Open con parametros" onclick="abrirParametros()">
+    <br><br>
+    <input type="button" value="Alert" onclick="mostrarAlerta()">
+    <br><br>
+    <input type="button" value="Confirm" onclick="confirmar()">
+    <br><br>
+    <input type="button" value="Prompt" onclick="cargarCadena()">
+</body>
+
+<script>
+    function abrir(){
+        var ventana = open();
+        ventana.document.write("Mensaje mostrado en la segunda ventana!!")
+    }
+
+    function abrirParametros(){
+        var ventana = open("", "", "width=400, height=250, menubar=yes");
+        ventana.document.write("Mensaje mostrado");
+    }
+
+    function mostrarAlerta(){
+        alert("esta es una ventana ustilizada enteriormente");
+    }
+
+    function confirmar(){
+        var rpta = confirm("Presione alguno de los botones:");
+        if(rpta == true){
+            alert("Presiono aceptar");
+        }else{
+            alert("Presiono cancelar");
+        }
+    }
+
+    function cargarCadena(){
+        var cdn = prompt("Ingrese una cadena");
+        alert("La cadena que ingreso es: " + cdn);
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="verificar()">Ir a la Peru21</button>
+
+    <script>
+        function verificar(){
+            var rpta = confirm("Realmente quiere ir al sitio?");
+            if(rpta){
+                window.location='http://www.peru21.pe'
+            }else{
+                window.alert('No hay problema');
+            }
+        }
+    </script>
+</body>
+</html>

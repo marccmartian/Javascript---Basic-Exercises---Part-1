@@ -1,0 +1,32 @@
+01 - Hacer un programa que permite analizar las distintas propiedades del objeto Window
+al presionar un boton para cada uno: open, open con parametros, alert, prompt y confirm
+
+** propiedad location **
+========================
+02 - Crear un botón que al ser presionado ingrese al periódico La Nación, pero primero muestre una ventana de confirmación, si queremos ingresar al periódico. En caso de presione el botón afirmativo, redireccionamos al sitio, en caso contrario mostramos un mensaje.
+
+03 - Confeccionar una página con un botón, cuando se presione generar un valor aleatorio entre 0 y 2. Si se genera el 0 llamar al webmail de Outlook, si se genera un 1 llamar a gmail en caso de generarse un 2 llamar a yahoo.
+Para generar un valor aleatorio utilizar la función random del objeto Math.
+ 
+var num;
+num=Math.random()*3; //se guarda en num un valor comprendido entre 0.00001 y 2.99999
+num=parseInt(num);  //guardamos solo la parte entera de la variable num
+if (num==0)
+    window.location='http://www.outlook.com';
+
+** propiedad u objeto Screen **
+===============================
+04 - Mostrar las propiedades del objeto screen:
+
+05 - Confeccionar un programa que al presionar un botón aparezca una ventana que ocupe todo el ancho del monitor y la mitad de su altura.
+
+** propiedad u objeto Navigator **
+==================================
+06 - Mostrar las propiedades del objeto navigator:
+07 - Una vez que se cargue la página mostrar un alert indicando si el navegador tiene activas las cookies.
+
+** objeto History **
+====================
+08 - contruir dos paginas html (form08.html, form09.html) el primer documento con un enlace normal que
+redireccione a la segunda pagina. y tambien con otro enlace que redireccione a la pagina dos pero haciendo uso
+de la propiedad go del objeto navigator. Una vez en la segunda pagina volver a la primera con la propiedad go.
