@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="" id="name" value="nombre" onfocus="limpiar(this)" onblur="verificar(this)">
+        </div>
+        <br>
+        <div>
+            <label for="email">Correo</label>
+            <input type="email" name="" id="email" value="mail" onfocus="limpiar(this)" onblur="verificar(this)">
+        </div>
+    </form>
+
+    <script>
+        //El 'this' se refiere al objeto que emitio el evento
+        function limpiar(control){
+            control.value = "";
+        }
+        function verificar(control){
+            if(control.value == ""){alert("Falta ingresar datos")}
+        }
+    </script>
+</body>
+</html>

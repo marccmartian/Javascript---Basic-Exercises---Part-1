@@ -1,0 +1,22 @@
+** onFocus & onBlur **
+======================
+//El evento onFocus se dispara cuando el objeto toma foco y el evento onBlur cuando el objeto pierde el foco.
+
+01 - Implementar un formulario que solicite la carga del nombre y el correo de una persona. Cuando el control tome foco borrar el contenido actual, al abandonar el mismo, mostrar un mensaje de alerta si el mismo está vacío. Mostrar en las propiedades value de los controles text los mensajes "nombre" y "mail" respectivamente.
+
+02 - Solicitar que se ingrese el nombre y la clave de un usuario. Mostrar una ventana de alerta si en la clave se ingresan menos de 7 caracteres o más de 20.
+
+** onMouseOver y onMouseOut **
+==============================
+//El evento onMouseOver se ejecuta cuando pasamos la flecha del mouse sobre un elemento HTML y el evento onMouseOut cuando la flecha abandona el mismo.
+
+03 - Cambiar el color de un cuadrado de 200px de ancho y 200px de alto.
+Implementando una función que cambie el color con un valor que llegue como parámetro. Cuando retiramos la flecha del mouse volvemos a pintar de negro el fondo de cuadrado
+
+** onLoad **
+============
+//El evento onLoad se ejecuta cuando cargamos una página en el navegador. Uno de los usos más frecuentes es para fijar el foco en algún control de un formulario, para que el operador no tenga que activar con el mouse dicho control.
+//este evento esta asociado a la etiqueta body
+
+04 - Establecer el foco en el primer elemento de un formulario al cargar la pagina
+05 - Confeccionar una página que muestre un mensaje con la función alert inmediatamente después que se cargue.
