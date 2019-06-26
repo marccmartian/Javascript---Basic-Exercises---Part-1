@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="pass1">Contraseña</label>
+            <input type="password" name="" id="pass1">
+        </div>
+        <br>
+        <div>
+            <label for="pass2">Repite tu contraseña</label>
+            <input type="password" name="" id="pass2">
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="compararPass()">Comparar</button>
+        </div>
+    </form>
+
+    <script>
+        function compararPass(){
+            cdn1 = document.getElementById('pass1').value;
+            cdn2 = document.getElementById('pass2').value;
+            if(cdn1 == cdn2){
+                alert('Las contraseñas son iguales');
+            }else{
+                alert('Error, contraseñas diferentes');
+            }
+        }
+    </script>
+</body>
+</html>

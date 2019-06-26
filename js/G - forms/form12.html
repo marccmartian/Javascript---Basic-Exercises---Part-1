@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div><label for="pre1">Rojo en inglés es:</label>
+            <select name="" id="pre1">
+                <option value="1">Blue</option>
+                <option value="2">Green</option>
+                <option value="3">Red</option>
+            </select>
+        </div>
+        <br>
+        <div><label for="pre2">Ventana en Inglés es:</label>
+            <select name="" id="pre2">
+                <option value="1">Window</option>
+                <option value="2">door</option>
+                <option value="3">bedroom</option>
+            </select>
+        </div>
+        <br>
+        <div><label for="pre3">Gato en inglés es:</label>
+            <select name="" id="pre3">
+                <option value="1">Lion</option>
+                <option value="2">Cat</option>
+                <option value="3">Dog</option>
+            </select>
+        </div>
+        <br>
+        <div><label for="pre4">Hombre en inglés es:</label>
+            <select name="" id="pre4">
+                <option value="1">Women</option>
+                <option value="2">Man</option>
+                <option value="3">Child</option>
+            </select>
+        </div>
+        <br>
+        <div><button type="button" onclick="evaluar()">Controlar</button></div>
+    </form>
+
+    <script>
+        var correctas = 0;
+        var incorrectas = 0;
+
+        function evaluar(){
+            var rpta1 = parseInt(document.getElementById('pre1').value);
+            var rpta2 = parseInt(document.getElementById('pre2').value);
+            var rpta3 = parseInt(document.getElementById('pre3').value);
+            var rpta4 = parseInt(document.getElementById('pre4').value);
+
+            //Operador ternario en javasript
+            rpta1 == 3 ? correctas++ : incorrectas++;
+            rpta2 == 1 ? correctas++ : incorrectas++;
+            rpta3 == 2 ? correctas++ : incorrectas++;
+            rpta4 == 2 ? correctas++ : incorrectas++;
+
+            alert('Correctas: ' + correctas + ' | Incorrectas: ' + incorrectas);
+        }
+    </script>
+</body>
+</html>

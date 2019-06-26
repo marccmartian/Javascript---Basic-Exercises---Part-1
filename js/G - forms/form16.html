@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p>Eres Mayor de 18 años?</p>
+        <div>
+            <input type="radio" name="edad" id="yes">
+            <label for="yes">Si, soy un macho</label>
+        </div>
+        <div>
+            <input type="radio" name="edad" id="not">
+            <label for="not">No; soy un niño</label>
+        </div><br>
+        <div>
+            <button type="button" onclick="verificarEdad()">Ingresar</button>
+        </div>
+    </form>
+
+    <script>
+        function verificarEdad(){
+            if(document.getElementById('yes').checked){alert('Bienvenido pillin!')}
+            if(document.getElementById('not').checked){alert('NO puedes pasar')}
+        }
+    </script>
+</body>
+</html>

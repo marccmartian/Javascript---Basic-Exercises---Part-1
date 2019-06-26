@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="msj">Mensaje:</label>
+        <textarea name="" id="msj" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="button" value="Verificar" onclick="verificarCaracteres()">
+    </form>
+
+    <script>
+        function verificarCaracteres(){
+            if(document.getElementById('msj').value.length > 20){
+                alert('CV muy largo')
+            }else{
+                alert('CV se cargó correctamente');
+            }
+        }
+    </script>
+</body>
+</html>

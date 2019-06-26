@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="msj">Comentarios:</label>
+            <textarea name="" id="msj" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div><input type="button" value="Enviar" onclick="mostrarDatos()"></div>
+    </form>
+
+    <script>
+        function mostrarDatos(){
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var msj = document.getElementById('msj').value;
+            alert('Los datos son: \n Nombre: ' + name + '\n email: ' + email + '\n Mensaje: ' + msj)
+        }
+    </script>
+</body>
+</html>

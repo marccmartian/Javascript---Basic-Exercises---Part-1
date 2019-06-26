@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select name="" id="select1" onchange="cambiarColor()">
+            <option value="ff0000">Rojo</option>
+            <option value="00ff00">Verde</option>
+            <option value="0000ff">Azul</option>
+        </select>
+        <br><br>
+        <div>
+            <label for="text1">Indice seleccionado del objeto SELECT:</label>
+            <input type="text" name="" id="text1">
+        </div><br>
+        <div>
+            <label for="text2">Texto seleccionado:</label>
+            <input type="text" name="" id="text2">
+        </div>
+        <div><br>
+            <label for="text3">Valor asociado:</label>
+            <input type="text" name="" id="text3">
+        </div>
+    </form>
+
+    <script>
+        function cambiarColor(){
+            var mySelect = document.getElementById('select1');
+            var index = mySelect.selectedIndex;
+            document.getElementById('text1').value = index;
+            document.getElementById('text2').value = mySelect.options[index].text;
+            document.getElementById('text3').value = mySelect.options[index].value;
+        }
+    </script>
+</body>
+</html>

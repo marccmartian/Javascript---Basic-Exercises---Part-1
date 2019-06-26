@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="pizzas">Pizzas:</label>
+            <select name="" id="pizzas">
+                <option value="4">Queso</option>
+                <option value="6">Jamón y Queso</option>
+                <option value="10">Especial</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="cant">Cantidad:</label>
+            <input type="text" name="" id="cant">
+        </div><br>
+        <div>
+            <button type="button" onclick="calcularImporte()">Calcular</button>
+        </div><br>
+        <div>
+            <label for="total">Importe Total:</label>
+            <input type="text" name="" id="total">
+        </div>
+    </form>
+
+    <script>
+        function calcularImporte(){
+            var valor = document.getElementById('pizzas').value;
+            var cant = document.getElementById('cant').value;
+
+            var total = parseInt(valor) * parseInt(cant);
+            
+            document.getElementById('total').value = total;
+        }
+    </script>
+</body>
+</html>

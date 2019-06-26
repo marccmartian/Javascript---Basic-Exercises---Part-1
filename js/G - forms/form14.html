@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <input type="checkbox" name="" id="check1" value="Fútbol">
+            <label for="check1">Fútbol</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="check2" value="Básquet">
+            <label for="check2">Basquet</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="check3" value="Tenis">
+            <label for="check3">Tenis</label>
+        </div>
+        <br>
+        <input type="button" value="Mostrar" onclick="mostrarDeportes()">
+    </form>
+
+    <script>        
+        var cadena = "deporte seleccionado ";
+
+        function mostrarDeportes(){
+            if(document.getElementById('check1').checked){cadena += ' Futbol '}
+            if(document.getElementById('check2').checked){cadena += ' Básquet '}
+            if(document.getElementById('check3').checked){cadena += ' Tenis '} 
+
+            alert(cadena);
+        }
+    </script>
+</body>
+</html>

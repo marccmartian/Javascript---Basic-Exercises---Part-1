@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="checkbox" name="" id="check1">
+        <label for="check1">Javascript</label>
+        <br>
+        <input type="checkbox" name="" id="check2">
+        <label for="check2">Php</label>
+        <br>
+        <input type="checkbox" name="" id="check3">
+        <label for="check3">JSP</label>
+        <br>
+        <input type="checkbox" name="" id="check4">
+        <label for="check4">VB.Net</label>
+        <br>
+        <input type="button" value="Mostrar" onclick="contarSeleccionados()">
+    </form>
+
+    <script>
+        function contarSeleccionados(){
+            var cant = 0;
+            if(document.getElementById('check1').checked){cant++}
+            if(document.getElementById('check2').checked){cant++}
+            if(document.getElementById('check3').checked){cant++}
+            if(document.getElementById('check4').checked){cant++}
+            alert('La cantidad de leguajes que sabes es: ' + cant);
+        }
+    </script>
+</body>
+</html>

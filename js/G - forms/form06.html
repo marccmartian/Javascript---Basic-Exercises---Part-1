@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="surname">Apellido:</label>
+            <input type="text" name="" id="surname">
+        </div>
+        <br>
+        <div>            
+            <input type="text" name="" id="concat">
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="concatenar()">Concatenar</button>
+        </div>
+    </form>
+
+    <script>
+        function concatenar(){
+            var cdn1 = document.getElementById('name').value;
+            var cdn2 = document.getElementById('surname').value;            
+            document.getElementById('concat').value = cdn1 + " " + cdn2;
+        }
+    </script>
+</body>
+</html>

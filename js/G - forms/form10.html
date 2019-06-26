@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select name="" id="micro">
+            <option value="400">Intel I3</option>
+            <option value="600">Intel I5</option>
+            <option value="800">Intel I7</option>
+        </select>
+        <select name="" id="monitor">
+            <option value="250">Samsung 20'</option>
+            <option value="350">Samsung 22'</option>
+            <option value="550">Samsung 26'</option>
+        </select>
+        <select name="" id="disco">
+            <option value="300">500 Gb</option>
+            <option value="440">1 Tb</option>
+            <option value="500">3 Tb</option>
+        </select>
+        <br><br>
+        <div><input type="button" value="Calcular" onclick="calcularTotal()"></div><br>
+        <div><label for="total">Total</label><input type="text" name="" id="total"></div>
+    </form>
+
+    <script>
+        function calcularTotal(){
+            var myMicro = document.getElementById('micro');
+            var myMonitor = document.getElementById('monitor');
+            var myDisco = document.getElementById('disco');            
+            
+            var n1 = myMicro.options[myMicro.selectedIndex].value;
+            var n2 = myMonitor.options[myMonitor.selectedIndex].value;
+            var n3 = myDisco.options[myDisco.selectedIndex].value;
+
+            var total = parseInt(n1) + parseInt(n2) + parseInt(n3);
+            
+            document.getElementById('total').value = total;
+        }
+    </script>
+</body>
+</html>

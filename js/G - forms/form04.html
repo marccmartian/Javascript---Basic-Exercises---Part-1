@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="number">Número</label>
+            <input type="text" name="" id="number">
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Al cubo" onclick="elevarCubo()">
+        </div>
+    </form>
+
+    <script>
+        function elevarCubo(){
+            var num = parseInt(document.getElementById('number').value);
+            var cubo = Math.pow(num, 3);            
+            alert(num + ' Elevado al cubo es: ' + cubo);
+        }
+    </script>
+</body>
+</html>

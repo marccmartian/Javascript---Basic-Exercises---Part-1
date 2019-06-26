@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="" id="pass">
+        </div>
+        <br>
+        <div>
+            <button type="button" onclick="comprobar()">Comprobar</button>
+        </div>
+    </form>
+
+    <script>
+        function comprobar(){
+            var cdn = document.getElementById('pass').value;
+            if(cdn.length < 5){
+                alert('Tu contraseña tiene menos de 5 caracteres');
+            }else{
+                alert('bienvenido');
+            }
+        }
+    </script>
+</body>
+</html>
