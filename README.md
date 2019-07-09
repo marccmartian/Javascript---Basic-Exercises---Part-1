@@ -1,4 +1,4 @@
-# Javascript---Basic-Exercises---Part-1
+# Javascript Basic Exercises Part01
 
 Ejercicios de programación básica en JavaScript que cubren temas como:
 - Estructuras condicionales: If, else, switch
