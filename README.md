@@ -9,6 +9,6 @@ Ejercicios de programación básica en JavaScript que cubren temas como:
 - Events
 - Window Object
 
-Para ejecutar los ejemplos solo hay que cambiar el valor del atributo 'src' de la etiqueta <script> por la url del script correspondiente.
+Para ejecutar los ejemplos solo hay que cambiar, en el archivo index.html; el valor del atributo 'src' de la etiqueta <script>, por la url que apunte al script correspondiente.
 
-Otros ejemplos, solo hay que ejuctarlos desde el mismo html.
+Otros ejemplos, solo hay que ejecutarlos desde el mismo documento html.
